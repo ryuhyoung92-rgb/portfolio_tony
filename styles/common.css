@@ -1,0 +1,49 @@
+/* common.css */
+#wrap {}
+#wrap header {}
+#wrap header #top_bnr {}
+#wrap header #top_bnr p {}
+#wrap header #gnb {}
+#wrap header #gnb nav {}
+#wrap header #gnb nav ul {}
+#wrap header #gnb nav ul li {}
+#wrap header #gnb nav ul li a {}
+#wrap header #gnb nav ul li a img {width:100%;}
+#wrap header #gnb h1 {}
+#wrap header #gnb h1 a {}
+#wrap header #gnb h1 a img {width:100%;}
+#wrap header #gnb .user_menu {}
+#wrap header #gnb .user_menu a {}
+#wrap header #gnb .user_menu a img {width:100%;}
+/* ===========================================================================header */
+#wrap main .container {}
+#wrap main .container .title {}
+#wrap main .container .title h1 {}
+#wrap main .container .title .list {}
+#wrap main .container .title .list li {}
+#wrap main .container .title .list li a {}
+#wrap main .container .title .list li a.active {}
+#wrap main .container .more {}
+#wrap main .container .more img {}
+#wrap main .container .list_container {}
+#wrap main .container .list_container .swiper-wrapper {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .photo {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .photo img {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents h1 {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .price_info {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .price_info .discount {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .price_info .price {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .price_info del {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .grade {}
+#wrap main .container .list_container .swiper-wrapper .swiper-slide .contents .grade img {}
+#wrap main .container .list_container .swiper-wrapper .slide1 {}
+#wrap main .container .list_container .swiper-wrapper .slide2 {}
+#wrap main .container .list_container .swiper-wrapper .slide3 {}
+#wrap main .container .list_container .swiper-wrapper .slide4 {}
+#wrap main .container .list_container .swiper-wrapper .slide5 {}
+#wrap main .container .list_container .swiper-wrapper .slide6 {}
+#wrap main .container .list_container .swiper-wrapper .slide7 {}
+#wrap main .container .list_container .swiper-wrapper .slide8 {}
+/* ===========================================================================공통 container */

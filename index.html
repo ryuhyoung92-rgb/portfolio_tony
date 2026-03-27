@@ -8,6 +8,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>TONYMORY</title>
     <!-- 플러그인, 웹글꼴 연결 -->
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 개별 사용자 디자인 파일 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
@@ -17,6 +23,553 @@
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <header>
+            <div id="top_bnr">
+                <p>쇼핑 알림 ON하면 1,000P 지급!</p>
+            </div>
+            <div id="gnb">
+                <nav>
+                    <ul>
+                        <li><a href="#"><img src="./images/common/menu.png" alt="menu"></a></li>
+                        <li><a href="#">본셉</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">신상품</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">카페토니</a></li>
+                    </ul>
+                </nav>
+                <h1>
+                    <a href="#"><img src="./images/common/logo.png" alt="tonymory"></a>
+                </h1>
+                <div class="user_menu">
+                    <a href="#"><img src="./images/common/search.png" alt="search"></a>
+                    <a href="#"><img src="./images/common/mypage.png" alt="mypage"></a>
+                    <a href="#"><img src="./images/common/cart.png" alt="cart"></a>
+                </div>
+            </div>
+        </header><!-- ====================================================header -->
+        <main>
+            <div id="hero_bnr">
+                <div class="swiper hero_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="text">
+                                <p>청태전으로 꽉<span></span>채우는 수분 밀도 크림</p>
+                                <h1>그린티<br>수분 크림</h1>
+                                <p><em>발효 녹차 '청태전'의 농밀한 수분</em>을<br>피부에 꽉 채워보세요.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="text">
+                                <p>맑은 컬러 위에 깨지지 않는 광채를 더해 완성하는<span>맑립광 시럽 텍스처</span></p>
+                                <h1>겟잇 틴트<br>워터풀 시럽</h1>
+                                <p>촉촉하게 차오르는 리즈의 순간,<br>아이브 리즈 <em>PICK</em> 맑립광 시럽 틴트</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="pagi_bar">
+                        <div class="swiper-pagination pagi"></div>
+                        <div class="bar_bg">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ====================================================1. hero_bnr -->
+            <div class="container best_seller">
+                <div class="title">
+                    <h1>BEST SELLER</h1>
+                    <ul class="list">
+                        <li><a href="#" class="base active">기초</a></li>
+                        <li><a href="#" class="makeup">메이크업</a></li>
+                        <li><a href="#" class="body_hair">바디/헤어</a></li>
+                        <li><a href="#" class="homme">옴므</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="more">view more<img src="./images/common/more_gray.png" alt="더보기"></a>
+                <div class="list_container best_list">
+                    <div class="swiper base_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base01.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>그린티 수분 2종 세트</h1>
+                                    <div class="price_info">
+                                        <span class="discount">30%</span>
+                                        <p class="price">23,100원</p>
+                                        <del>33,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(33)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base02.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>그린티 수분 미스트</h1>
+                                    <div class="price_info">
+                                        <span class="discount">20%</span>
+                                        <p class="price">10,000원</p>
+                                        <del>12,500원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(17)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base03.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>그린티 수분 세럼</h1>
+                                    <div class="price_info">
+                                        <span class="discount">30%</span>
+                                        <p class="price">13,650원</p>
+                                        <del>19,500원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(11)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base04.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>그린티 수분 크림 60ml</h1>
+                                    <div class="price_info">
+                                        <span class="discount">30%</span>
+                                        <p class="price">13,600원</p>
+                                        <del>19,500원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(7)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base05.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[공식몰 단독] 프리미엄 RX 제비집 에센스+영양크림 세트</h1>
+                                    <div class="price_info">
+                                        <span class="discount">70%</span>
+                                        <p class="price">38,800원</p>
+                                        <del>130,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.8(1,744)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base06.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>프리미엄 RX 제비집 에센스 & 아이크림 기획세트</h1>
+                                    <div class="price_info">
+                                        <span class="discount">80%</span>
+                                        <p class="price">33,000원</p>
+                                        <del>165,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.8(1,824)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide7">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base07.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>아줄렌 안티 블레미쉬 2종 세트</h1>
+                                    <div class="price_info">
+                                        <span class="discount">30%</span>
+                                        <p class="price">23,100원</p>
+                                        <del>33,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(8)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_base08.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>아줄렌 안티 블레미쉬 아크네 폼 클렌저</h1>
+                                    <div class="price_info">
+                                        <span class="discount">30%</span>
+                                        <p class="price">10,150원</p>
+                                        <del>14,500원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(35)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- =============================기초 swiper -->
+                    <div class="swiper makeup_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup01.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[리즈 Pick] 퍼펙트립스 쇼킹립 틴트</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li>+28</li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">25%</span>
+                                        <p class="price">11,200원</p>
+                                        <del>15,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.8(43,592)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup02.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[리즈 Pick] 겟잇 틴트 워터풀 시럽</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li>+3</li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">20%</span>
+                                        <p class="price">12,800원</p>
+                                        <del>16,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.9(24,711)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup03.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>겟잇 틴트 컬러풀 워터</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">10%</span>
+                                        <p class="price">11,700원</p>
+                                        <del>13,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(1,506)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup04.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[주토피아/NEW] 겟잇 틴트 워터풀 버터</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li>+22</li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">38%</span>
+                                        <p class="price">9,900원</p>
+                                        <del>16,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(22,846)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup05.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[주토피아/NEW] 치크톤 립앤치크 듀오밤</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li>+9</li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">26%</span>
+                                        <p class="price">14,800원</p>
+                                        <del>20,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(4,354)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup06.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>[주토피아] 스킨톤 픽싱 커버 쿠션</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">34%</span>
+                                        <p class="price">19,900원</p>
+                                        <del>30,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(10)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide7">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup07.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>루미너스 여신 광채 비비</h1>
+                                    <ul class="color">
+                                        <li><span></span></li>
+                                        <li><span></span></li>
+                                    </ul>
+                                    <div class="price_info">
+                                        <span class="discount">20%</span>
+                                        <p class="price">12,000원</p>
+                                        <del>15,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(2,316)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <a href="#" class="photo"><img src="./images/product/best_seller/best_makeup08.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>백젤 아이라이너</h1>
+                                    <div class="price_info">
+                                        <span class="discount">11%</span>
+                                        <p class="price">8,500원</p>
+                                        <del>9,500원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(3,616)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- =============================메이크업 swiper -->
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="page_bar">
+                        <div class="swiper-pagination pagi"></div>
+                        <div class="bar_bg">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ====================================================2. best_seller -->
+            <div class="new_item">
+                <p><img src="./images/product/new_item/new_left_bnr.png" alt=""></p>
+                <div class="new_contents">
+                    <div class="new_info">
+                        <h1><span>EYETONE</span><br>SINGLE EYESHADOW</h1>
+                        <div class="new_detail">
+                            <p>디테일하게 설계된 퍼스널 33가지 컬러의 <span>아이톤 싱글 아이섀도우</span> &<br>필요한 컬러만 쏙쏙! 골라 원 앤 온리 컬러 조합이 가능한 <span>아이톤 포켓 팔레트</span></p>
+                            <a href="#" class="more">view more<img src="./images/common/more_gray.png" alt="더보기"></a>
+                        </div>
+                    </div>
+                    <div class="list_container new_list">
+                        <div class="swiper new_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#" class="photo"><img src="./images/product/new_item/new_item01.png" alt=""></a>
+                                    <a href="#" class="contents">
+                                        <h1>[NEW] 아이톤 싱글 아이섀도우</h1>
+                                        <ul class="color">
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li><span></span></li>
+                                            <li>+28</li>
+                                        </ul>
+                                        <div class="price_info">
+                                            <span class="discount">20%</span>
+                                            <p class="price">6,400원</p>
+                                            <del>8,000원</del>
+                                        </div>
+                                        <div class="grade">
+                                            <img src="#" alt="">4.8(4,236)
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#" class="photo"><img src="./images/product/new_item/new_item02.png" alt=""></a>
+                                    <a href="#" class="contents">
+                                        <h1>[NEW] 아이톤 포켓 팔레트 케이스</h1>
+                                        <div class="price_info">
+                                            <p class="price">7,000원</p>
+                                        </div>
+                                        <div class="grade">
+                                            <img src="#" alt="">5.0(9)
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+            </div><!-- ====================================================3. new_item -->
+            <div class="container boncept">
+                <div class="title">
+                    <h1>BONCEPT</h1>
+                    <p>피부 본연의 힘을 깨우는 나만의 성분 큐레이터, 본셉</p>
+                </div>
+                <a href="#" class="more">view more<img src="./images/common/more_gray.png" alt="더보기"></a>
+                <div class="list_container boncept_list">
+                    <div class="swiper boncept_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept01.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 PDRN 3종 세트 (클렌저, 앰플, 크림)</h1>
+                                    <div class="price_info">
+                                        <span class="discount">33%</span>
+                                        <p class="price">25,800원</p>
+                                        <del>38,700원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.8(53)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept02.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 PDRN 딥 클렌저</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.9(53)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept03.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 PDRN 베리어 크림</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.9(15)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept04.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 PDRN 리페어 앰플</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(29)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept05.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 레티날 콜라겐 3종 세트 (앰플, 아이크림, 글로우팩)</h1>
+                                    <div class="price_info">
+                                        <span class="discount">33%</span>
+                                        <p class="price">25,800원</p>
+                                        <del>38,700원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.9(30)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept06.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 레티날 콜라겐 아이크림</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.9(13)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide7">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept07.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 레티날 콜라겐 부스팅 샷 앰플</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">5.0(12)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <a href="#" class="photo"><img src="./images/product/boncept/boncept08.png" alt=""></a>
+                                <a href="#" class="contents">
+                                    <h1>본셉 레티날 콜라겐 글로우 크림 팩</h1>
+                                    <div class="price_info">
+                                        <span class="discount">15%</span>
+                                        <p class="price">11,000원</p>
+                                        <del>12,000원</del>
+                                    </div>
+                                    <div class="grade">
+                                        <img src="#" alt="">4.7(5)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- ============================= swiper -->
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="page_bar">
+                        <div class="swiper-pagination pagi"></div>
+                        <div class="bar_bg">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ====================================================4. boncept -->
+            <!-- ====================================================5. monthlyTONY. -->
+            <!-- ====================================================6. brand store -->
+        </main><!-- ========================================================main -->
+        <footer></footer><!-- ====================================================footer -->
+    </div>
 </body>
 </html>
