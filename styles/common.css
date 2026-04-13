@@ -53,4 +53,10 @@
 #wrap main .container .list_container .swiper .swiper-wrapper .slide6 {}
 #wrap main .container .list_container .swiper .swiper-wrapper .slide7 {}
 #wrap main .container .list_container .swiper .swiper-wrapper .slide8 {}
+#wrap main .container .list_container .swiper .prev {}
+#wrap main .container .list_container .swiper .next {}
+#wrap main .container .list_container .swiper .page_bar {}
+#wrap main .container .list_container .swiper .page_bar .pagi {}
+#wrap main .container .list_container .swiper .page_bar .bar_bg {}
+#wrap main .container .list_container .swiper .page_bar .bar_bg .bar {}
 /* ===========================================================================공통 container */
