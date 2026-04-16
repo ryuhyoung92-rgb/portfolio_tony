@@ -127,7 +127,7 @@
 #wrap main .new_item .new_container .new_list .new_contents .photo {}
 #wrap main .new_item .new_container .new_list .new_contents .photo img {width:100%; margin-bottom:20px;}
 #wrap main .new_item .new_container .new_list .new_contents .contents {}
-#wrap main .new_item .new_container .new_list .new_contents .contents > h2 {margin-bottom:30px;}
+#wrap main .new_item .new_container .new_list .new_contents .contents > h2 {margin-bottom:35px;}
 #wrap main .new_item .new_container .new_list .new_contents .contents .contents_title {
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; margin-bottom:30px;
 }
