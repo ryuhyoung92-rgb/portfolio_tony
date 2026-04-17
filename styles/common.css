@@ -43,6 +43,32 @@
 #wrap header .all_menu .user_menu a:last-child {margin-right:0;}
 #wrap header .all_menu .user_menu a img {}
 /* ===========================================================================header */
+#wrap main {}
+#wrap main #hero_bnr {}
+#wrap main #hero_bnr .hero_swiper_wrap {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {
+    padding:295.5px 0 295.5px 318px;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {
+    font-size:0.88rem; font-weight:300; display:inline-block;
+    display:flex; align-items:center; margin-bottom:15px;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p span {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {
+    font-size:3.75rem; font-weight:700; line-height:1.2; margin-bottom:50px;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {
+    font-weight:300; line-height:1.8;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p em {
+    font-weight:500;
+}
+/* ===========================================================================hero_bnr */
+
 #wrap main .container {
     padding:140px 80px 0; width:100%; /* background-color: aquamarine; */}
 #wrap main .container .title {/* background-color:bisque; */ text-align: center;}
@@ -120,7 +146,7 @@
 #wrap main .container .list_container .swiper .control_bar {position:relative;}
 #wrap main .container .list_container .swiper .control_bar .prev,
 #wrap main .container .list_container .swiper .control_bar .next {
-    bottom:50%; transform:translateY(-50%); width:24px; height:24px;
+    bottom:50%; transform:translateY(-50%); width:24px; height:24px; z-index:100;
     background-position:center; background-size:contain;
 }
 #wrap main .container .list_container .swiper .control_bar .prev {

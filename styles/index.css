@@ -2,19 +2,68 @@
 /* ===========================================================================1. hero_bnr */
 #wrap main {}
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .hero_swiper_wrap {}
+#wrap main #hero_bnr .hero_swiper_wrap {position:relative;}
 #wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title p span {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text .text_title h1 {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .swiper-slide .hero_swiper .text > p em {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {}
-#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 {
+    background-image:url(../images/hero_bnr/hero_bnr01.jpg);
+    background-size:cover; background-position:center;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p {color:#E3F3CD;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title p span {
+    display:inline-block; margin:0 5px; width:20px; height:1px; background:#E3F3CD;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text .text_title h1 {color:#fff;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text > p {color:#E3F3CD;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide1 .hero_swiper .text > p em {color:#fff;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 {
+    background-image:url(../images/hero_bnr/hero_bnr02.jpg);
+    background-size:cover; background-position:center;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title {}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title {display:flex; gap:10px; position:relative;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p {color:#fff;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title p::after {
+    content:''; display:block; width:10px; height:10px;
+    position:absolute; left:260px; top:0;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title .sub_text_title span {color:#F9E2CF; font-weight:500;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text .text_title h1 {color:#fff;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text > p {color:#F9E2CF;}
+#wrap main #hero_bnr .hero_swiper_wrap .swiper-wrapper .slide2 .hero_swiper .text > p em {color:#fff;}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar {}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .prev,
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .next {
+    width:32px; height:32px; z-index:100;
+    background-position:center; background-size:contain;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .prev {
+    background-image:url(../images/icons/prev.png);
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .next {
+    background-image:url(../images/icons/next.png);
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .prev svg,
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .next svg {display:none;}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar {}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi {
+    display:flex; padding:12px 55px; 
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet {
+    width:50%; height:1px; background:#d9d9d9; margin:0; opacity:1;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .pagi .swiper-pagination-bullet-active {
+    width:50%; height:1px; background:#888 !important;
+}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg {}
+#wrap main #hero_bnr .hero_swiper_wrap .control_bar .page_bar .bar_bg .bar {}
+
+
+
 #wrap main #hero_bnr .hero_swiper_wrap .prev {}
 #wrap main #hero_bnr .hero_swiper_wrap .next {}
 #wrap main #hero_bnr .hero_swiper_wrap .pagi_bar {}
@@ -60,7 +109,7 @@
 #wrap main .best_seller .best_list .swiper .control_bar .page_bar .pagi {}
 #wrap main .best_seller .best_list .swiper .control_bar .page_bar .bar_bg {}
 #wrap main .best_seller .best_list .swiper .control_bar .page_bar .bar_bg .bar {}
-
+/* 메이크업 스와이퍼 */
 #wrap main .best_seller .best_list .makeup_swiper {}
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper {}
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .swiper-slide {}
@@ -87,7 +136,7 @@
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide6 {}
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide7 {}
 #wrap main .best_seller .best_list .makeup_swiper .swiper-wrapper .slide8 {}
-
+/* ===========================================================================3. new_item */
 #wrap main .new_item {
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:30px;
     padding:180px 80px 0;
@@ -167,5 +216,5 @@
     content:''; display:block; width:100%; height:1px;
     position:absolute; left:0; bottom:0; background:#D9D9D9;
 }
-
-
+/* ===========================================================================4. boncept */
+#wrap main .boncetp {}
