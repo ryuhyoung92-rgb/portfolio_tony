@@ -141,8 +141,10 @@
     display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center; gap:30px;
     padding:180px 80px 0;
 }
-#wrap main .new_item > p {width:50%;}
-#wrap main .new_item > p > img {width:100%;}
+#wrap main .new_item > p {}
+#wrap main .new_item > p > img {
+    width:100%; height:auto;
+}
 #wrap main .new_item .new_container {width:50%;}
 #wrap main .new_item .new_container .new_info {}
 #wrap main .new_item .new_container .new_info h1,
@@ -217,18 +219,140 @@
     position:absolute; left:0; bottom:0; background:#D9D9D9;
 }
 /* ===========================================================================4. boncept */
-#wrap main .boncept {}
+#wrap main .boncept {padding-bottom:140px;}
 #wrap main .boncept .boncept_bnr {
     background-image:url(../images/product/boncept/boncept_bnr.jpg);
     background-position:center; background-size: cover;
-    padding:0 350px; position:relative;
+    width:100%; position:relative; margin-bottom:50px;
+    display:flex;
 }
 #wrap main .boncept .boncept_bnr .title::before {
-    content:''; display:block; width:300px; height:300px;
-    background-image:url(../images/product/boncept/boncept.jpg);
+    content:''; display:block; width:300px; height:300px; 
+    background-image:url(../images/product/boncept/boncept.png);
     background-position:center; background-size: cover;
-    opacity:0.2; position:absolute; left:427px; top:30.5px;
+    opacity:0.2; position:absolute; left:427px; top:50%; transform:translateY(-50%);
 }
-#wrap main .boncept .boncept_bnr .title {}
+#wrap main .boncept .boncept_bnr .title {padding:145.5px 0 145.5px 350px;}
 #wrap main .boncept .boncept_bnr .title h1 {color:#fff; font-size:2.50rem; margin-bottom:15px;}
 #wrap main .boncept .boncept_bnr .title p {color:#FFCDCF; font-size:1.38rem;}
+
+/* ===========================================================================5. monthlyTONY. */
+#wrap main .magazine_wrap {
+    display:flex; padding:0 0 0 80px;
+}
+#wrap main .magazine_wrap .monthly_tony {
+    display:flex; flex-flow:column nowrap; width:auto;
+}
+#wrap main .magazine_wrap .monthly_tony h1,
+#wrap main .magazine_wrap .monthly_tony h1 span {
+    color:#333; font-family: "Fredoka", sans-serif;
+}
+#wrap main .magazine_wrap .monthly_tony h1 {
+    padding:94.5px 71.5px; font-weight:300; font-size:2.188rem;
+}
+#wrap main .magazine_wrap .monthly_tony h1 span {
+    font-weight:500; font-size:3.125rem; padding-left:5px;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap {
+    display:flex; flex-flow:column nowrap;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap .magazine_list {}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li {
+    padding:30px 25px;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active {
+    background-color:#f5f5f5;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a {}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a p {
+    color:#333; margin-bottom:15px; font-size:0.875rem;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    height:20px;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a .magazine_title h2 {
+    font-family: "Fredoka", sans-serif; font-weight:400; 
+    color:#333; font-size:1.125rem;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li.active a .magazine_title img {}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a {}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a p {
+    color:#333; margin-bottom:15px; font-size:0.75rem; font-weight:300;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    height:20px;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title h2 {
+    font-family: "Fredoka", sans-serif; font-weight:300; 
+    color:#333;
+}
+#wrap main .magazine_wrap .monthly_tony .magazine_list_wrap li a .magazine_title img {height:100%}
+#wrap main .magazine_wrap .magazine {
+    display:flex; flex-flow:row nowrap; gap:40px;
+    padding:60px 60px 0 80px; background-color:#f5f5f5;
+    width:calc(100% - 450px);
+}
+#wrap main .magazine_wrap .magazine > img {height:100%;}
+#wrap main .magazine_wrap .magazine .magazine_container {
+    display:flex; flex-flow:column nowrap; justify-content:space-between; align-items:flex-start;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product {
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center; gap:20px;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .photo {}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .photo img {}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents {}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents h2 {
+    color:#333; font-weight:500; margin-bottom:30px;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info {
+    display:flex; flex-flow:row nowrap; gap:8px; margin-bottom:10px;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info .discount {
+    color:#FF6E86; font-size:0.938rem; font-weight:500;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info .price {
+    color:#333; font-size:0.938rem;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .price_info del {
+    color:#888; font-size:0.75rem; font-weight:300;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade {
+    display:flex; align-items:center; height:14px;
+}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade img {height:100%;}
+#wrap main .magazine_wrap .magazine .magazine_container .magazine_product .contents .grade p {
+    color:#333; font-size:0.75rem; font-weight:300;
+}
+/* ===========================================================================6. brand store */
+#wrap main .brand_store {}
+#wrap main .brand_store .title {}
+#wrap main .brand_store .title h1 {}
+#wrap main .brand_store .title p {}
+#wrap main .brand_store .store_search_wrap {}
+#wrap main .brand_store .store_search_wrap .store_map {}
+#wrap main .brand_store .store_search_wrap a img {}
+#wrap main .brand_store .store_search_wrap #store_search_form {}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area {}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab {}
+#wrap main .brand_store .store_search_wrap #store_search_form .tab_area .tab.active {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area .button {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .map_search #map_search_area .button img {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total #use_place {}
+#wrap main .brand_store .store_search_wrap #store_search_form .search_area_wrap .filter_area .search_result .total #use_place label {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address h2 {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_address > p {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list .store_info .store_number {}
+#wrap main .brand_store .store_search_wrap #store_search_form .result_list_area .result_list img {}
