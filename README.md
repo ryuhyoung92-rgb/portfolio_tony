@@ -11,6 +11,9 @@
     2. mainSwiper(best seller, boncept) JS 작업 완료
     3. 그룹 덜 묶인 태그 div 작업 -> div.contents_title > h2 + div.color
     4. new_item css 작업 완료
+`2026.04.20`
+    1. footer 까지 css 완료
+    2. color 칩 색깔 채우기 / 디테일 수정 진행 예정
 
 ### 어려운점 & 자주하는 실수
 
