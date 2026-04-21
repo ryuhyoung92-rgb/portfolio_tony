@@ -32,5 +32,14 @@
     #wrap main .new_item {
     gap:30px; padding:80px 80px 0 0;
     }
-    #wrap main .new_item > p > img {width:356px; height:726px;}
+    #wrap main .new_item > p {
+    background-image:url(../images/product/new_item/new_left_bnr.png);
+    background-position:center; background-size:cover; width:356px; height:726px;
+    overflow:hidden;
+    }
+    #wrap main .new_item > p > img {height:100%;}
+    #wrap main .new_item .new_container .new_info .new_detail {
+        display:flex; justify-content:space-between; align-items:center;
+        padding:30px 0;
+    }
 }
